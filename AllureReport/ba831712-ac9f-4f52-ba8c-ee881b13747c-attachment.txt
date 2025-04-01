@@ -1,0 +1,9 @@
+[32mINFO    [0m root:conftest.py:18 *********************************** Running a new automated test ***********************************
+[32mINFO    [0m root:conftest.py:37 ******************************** Running Scenario: Successful Login ********************************
+[32mINFO    [0m root:conftest.py:49 Given the user is on the Login Page
+[32mINFO    [0m root:login_page.py:19 Enter username TestUser in the field <Locator frame=<Frame name= url='http://uitestingplayground.com/sampleapp'> selector='input[name="UserName"]'>
+[32mINFO    [0m root:login_page.py:23 Enter password pwd in the field <Locator frame=<Frame name= url='http://uitestingplayground.com/sampleapp'> selector='input[name="Password"]'>
+[32mINFO    [0m root:login_page.py:27 Click on the button <Locator frame=<Frame name= url='http://uitestingplayground.com/sampleapp'> selector='internal:role=button[name="Log In"i]'>
+[32mINFO    [0m root:conftest.py:49 When the user enters valid credentials
+[32mINFO    [0m root:conftest.py:49 Then the system should display a success message
+[32mINFO    [0m root:conftest.py:42 The Scenario: 'Successful Login' has Passed
