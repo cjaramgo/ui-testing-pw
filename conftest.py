@@ -9,9 +9,7 @@ load_dotenv()
 logger = logging.getLogger()
 
 
-
-
-
+# Setup browser
 @pytest.fixture(scope="session", autouse=True)
 def setup(browser, base_url):
     initial_msg = " Running a new automated test "
@@ -24,6 +22,7 @@ def setup(browser, base_url):
     logger.info(final_msg.center(100, "*"))
 
 
+# Setpup page
 @pytest.fixture()
 def page(setup, request, pytestconfig):
     page = setup.new_page()
