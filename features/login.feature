@@ -33,3 +33,4 @@ Feature: Login
   Scenario: New scenario
     Given this is given
     When this is when
+    Then this is then

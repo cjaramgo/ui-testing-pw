@@ -77,3 +77,8 @@ def step_given():
 @when("this is when")
 def step_when():
     pass
+
+
+@then("this is then")
+def step_then():
+    pass
