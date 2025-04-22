@@ -193,3 +193,22 @@ Notice the following:
 The `my_page_object` fixture is declared as arguments for the step function.
 The step function no longer explicitly constructs page objects.
 
+### Project structure
+
+```
+├── Questions.md
+├── README.md
+├── automation.log
+├── conftest.py
+├── features
+│   ├── __init__.py
+│   └── login.feature
+├── pages
+│   ├── __init__.py
+│   └── login_page.py
+├── pytest.ini
+├── requirements.txt
+└── steps
+    ├── __init__.py
+    └── login_steps.py
+   ```
