@@ -42,3 +42,6 @@ class Login:
     def capture_screenshot(self, image_name):
         allure.attach(self.page.screenshot(), name=image_name, attachment_type=allure.attachment_type.PNG)
 
+    def new_function(self):
+        pass
+
