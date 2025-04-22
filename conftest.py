@@ -1,7 +1,6 @@
 import logging
 import time
 
-import allure
 import pytest
 from dotenv import load_dotenv
 
@@ -22,7 +21,7 @@ def setup(browser, base_url):
     logger.info(final_msg.center(100, "*"))
 
 
-# Setpup page
+# Setup page
 @pytest.fixture()
 def page(setup, request, pytestconfig):
     page = setup.new_page()
