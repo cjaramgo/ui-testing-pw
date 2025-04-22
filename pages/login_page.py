@@ -15,11 +15,12 @@ class Login:
         self.logout_button = page.get_by_role("button", name="Log Out")
         self.login_status = page.locator('#loginstatus')
 
-    # New line added
+    # Enter username
     def enter_username(self, username):
         self.logger.info(f"Enter username {username} in the field {self.username_input}")
         self.username_input.fill(username)
 
+    # Enter password
     def enter_password(self, password):
         self.logger.info(f"Enter password {password} in the field {self.password_input}")
         self.password_input.fill(password)
