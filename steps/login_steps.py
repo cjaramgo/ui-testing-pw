@@ -24,7 +24,7 @@ def goto_login(page):
 
 @when("the user enters valid credentials")
 def login_valid_credentials(login_page):
-    """ Docstring python"""
+    """ This step authorize a valid user"""
     login_page.enter_username(valid_username)
     login_page.enter_password(valid_password)
     login_page.click_on_login()
