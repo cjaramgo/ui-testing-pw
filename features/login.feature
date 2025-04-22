@@ -29,3 +29,7 @@ Feature: Login
     Given the user has logged in
     When the user logged out
     Then the system should display a logout message
+
+  Scenario: New scenario
+    Given this is given
+    When this is when

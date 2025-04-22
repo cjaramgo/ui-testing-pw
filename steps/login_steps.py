@@ -67,3 +67,13 @@ def logged_out(login_page):
 @then(parsers.re("the system should display \\w+ (?P<status>[a-zA-Z]*) message"))
 def display_success_message(login_page, status):
     login_page.validate_message(status, valid_username)
+
+
+@given("this is given")
+def step_given():
+    pass
+
+
+@when("this is when")
+def step_when():
+    pass
