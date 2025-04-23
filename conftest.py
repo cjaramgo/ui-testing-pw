@@ -24,7 +24,7 @@ def setup(browser, base_url):
 # Setup page
 @pytest.fixture()
 def page(setup, request, pytestconfig):
-    initial_msg = "Setup new page"
+    initial_msg = "Setup new page - this a change in the Test branch"
     logger.info(initial_msg.center(100, "*"))
     page = setup.new_page()
     page.set_default_timeout(60000)
