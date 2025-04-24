@@ -67,3 +67,4 @@ def logged_out(login_page):
 @then(parsers.re("the system should display \\w+ (?P<status>[a-zA-Z]*) message"))
 def display_success_message(login_page, status):
     login_page.validate_message(status, valid_username)
+    return login_page.get_time()
