@@ -72,13 +72,3 @@ def display_success_message(login_page, status):
 @given("this is given")
 def step_given(login_page):
     login_page.enter_username("wrong")
-
-
-@when("this is when")
-def step_when():
-    pass
-
-
-@then("this is then")
-def step_then():
-    pass
