@@ -1,2 +1,10 @@
+from playwright.sync_api import Page
+
+
 class BasePage:
-    pass
+
+    def __init__(self, page: Page):
+        self.page = page
+
+    def refresh_page(self):
+        self.page.reload(wait_until="load")
