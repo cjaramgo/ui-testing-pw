@@ -1,4 +1,5 @@
 import logging
+from datetime import date
 
 import allure
 from playwright.sync_api import Page, expect
@@ -45,3 +46,8 @@ class Login:
 
     def click_on_alert(self):
         self.new_locator.click()
+
+    @staticmethod
+    def get_time():
+        today = date.today()
+        return today
