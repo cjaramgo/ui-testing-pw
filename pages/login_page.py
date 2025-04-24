@@ -14,6 +14,7 @@ class Login:
         self.login_button = page.get_by_role("button", name="Log In")
         self.logout_button = page.get_by_role("button", name="Log Out")
         self.login_status = page.locator('#loginstatus')
+        self.new_locator = page.get_by_role("alert")
 
     # Enter username
     def enter_username(self, username):
@@ -42,6 +43,5 @@ class Login:
     def capture_screenshot(self, image_name):
         allure.attach(self.page.screenshot(), name=image_name, attachment_type=allure.attachment_type.PNG)
 
-    def new_function(self):
-        pass
-
+    def click_on_alert(self):
+        self.new_locator.click()
