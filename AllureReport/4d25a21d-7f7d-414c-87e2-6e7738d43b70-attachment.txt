@@ -1,7 +1,0 @@
-[32mINFO    [0m root:conftest.py:37 ************************ Running Scenario: Login with username field empty *************************
-[32mINFO    [0m root:conftest.py:49 Given the user is on the Login Page
-[32mINFO    [0m root:login_page.py:23 Enter password pwd in the field <Locator frame=<Frame name= url='http://uitestingplayground.com/sampleapp'> selector='input[name="Password"]'>
-[32mINFO    [0m root:login_page.py:27 Click on the button <Locator frame=<Frame name= url='http://uitestingplayground.com/sampleapp'> selector='internal:role=button[name="Log In"i]'>
-[32mINFO    [0m root:conftest.py:49 When the user leaves the username empty
-[32mINFO    [0m root:conftest.py:49 Then the system should display an error message
-[32mINFO    [0m root:conftest.py:42 The Scenario: 'Login with username field empty' has Passed
